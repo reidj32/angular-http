@@ -4,7 +4,6 @@ import { LoggerService } from './logger.service';
 
 @Injectable()
 export class PlainLoggerService implements LoggerService {
-
   log(message: string): void {
     console.log(message);
   }
@@ -13,6 +12,5 @@ export class PlainLoggerService implements LoggerService {
     console.log(message);
   }
 
-  constructor() { }
-
+  constructor() {}
 }

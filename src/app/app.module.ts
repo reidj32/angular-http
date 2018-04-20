@@ -20,12 +20,7 @@ import { CoreModule } from './core/core.module';
     EditBookComponent,
     AddReaderComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    CoreModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CoreModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

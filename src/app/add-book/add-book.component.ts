@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Book } from "app/models/book";
+import { Book } from 'app/models/book';
 
 @Component({
   selector: 'app-add-book',
@@ -8,16 +8,14 @@ import { Book } from "app/models/book";
   styles: []
 })
 export class AddBookComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() { }
+  ngOnInit() {}
 
   saveBook(formValues: any): void {
-    let newBook: Book = <Book>formValues;
+    const newBook: Book = <Book>formValues;
     newBook.bookID = 0;
     console.log(newBook);
     console.warn('Save new book not yet implemented.');
   }
-
 }

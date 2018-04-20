@@ -2,8 +2,8 @@ import { Component, OnInit, VERSION } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Title } from '@angular/platform-browser';
 
-import { Book } from "app/models/book";
-import { Reader } from "app/models/reader";
+import { Book } from 'app/models/book';
+import { Reader } from 'app/models/reader';
 import { DataService } from 'app/core/data.service';
 
 @Component({
@@ -12,14 +12,12 @@ import { DataService } from 'app/core/data.service';
   styles: []
 })
 export class DashboardComponent implements OnInit {
-
   allBooks: Book[];
   allReaders: Reader[];
   mostPopularBook: Book;
 
-  constructor(private dataService: DataService,
-              private title: Title) { }
-  
+  constructor(private dataService: DataService, private title: Title) {}
+
   ngOnInit() {
     this.allBooks = this.dataService.getAllBooks();
     this.allReaders = this.dataService.getAllReaders();
@@ -35,5 +33,4 @@ export class DashboardComponent implements OnInit {
   deleteReader(readerID: number): void {
     console.warn(`Delete reader not yet implemented (readerID: ${readerID}).`);
   }
-
 }
