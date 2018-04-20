@@ -1,0 +1,17 @@
+{
+  "git.ignoreLimitWarning": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "npm-debug.log": true
+  },
+
+  "editor.quickSuggestions": true,
+  "editor.parameterHints": false,
+  "editor.wordBasedSuggestions": false,
+  "editor.selectionHighlight": false,
+  "editor.suggestOnTriggerCharacters": true
+}
