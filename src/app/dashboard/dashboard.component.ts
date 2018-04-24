@@ -1,11 +1,11 @@
 import { Component, OnInit, VERSION } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { DataService } from 'app/core/data.service';
-import { Book } from 'app/models/book';
-import { Reader } from 'app/models/reader';
 
-import { BookTrackerError } from '../models/bookTrackerError';
+import { DataService } from '../core/data.service';
+import { Book } from '../models/book';
+import { BookTrackerError } from '../models/book-tracker-error';
+import { Reader } from '../models/reader';
 
 @Component({
   selector: 'app-dashboard',

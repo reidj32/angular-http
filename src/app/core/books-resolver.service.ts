@@ -1,15 +1,16 @@
+import { Injectable } from '@angular/core';
 import {
-  Resolve,
   ActivatedRouteSnapshot,
+  Resolve,
   RouterStateSnapshot
 } from '@angular/router';
-import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Book } from '../models/book';
-import { DataService } from './data.service';
-import { BookTrackerError } from '../models/bookTrackerError';
-import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
+import { catchError } from 'rxjs/operators';
+
+import { Book } from '../models/book';
+import { BookTrackerError } from '../models/book-tracker-error';
+import { DataService } from './data.service';
 
 @Injectable()
 export class BooksResolver implements Resolve<Book[] | BookTrackerError> {

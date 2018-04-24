@@ -4,15 +4,15 @@ import {
   HttpHeaders
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { allBooks, allReaders } from 'app/data';
-import { Book } from 'app/models/book';
-import { BookTrackerError } from 'app/models/bookTrackerError';
-import { OldBook } from 'app/models/old-book';
-import { Reader } from 'app/models/reader';
 import { Observable } from 'rxjs/Observable';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
 import { catchError, map, tap } from 'rxjs/operators';
 
+import { allBooks, allReaders } from '../data';
+import { Book } from '../models/book';
+import { BookTrackerError } from '../models/book-tracker-error';
+import { OldBook } from '../models/old-book';
+import { Reader } from '../models/reader';
 import { LoggerService } from './logger.service';
 
 @Injectable()
